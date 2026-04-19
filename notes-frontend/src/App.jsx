@@ -246,7 +246,9 @@ function Dashboard({ setToken }) {
                 ) : (
                     <>
                       <h3 className="font-semibold text-lg">{note.title}</h3>
-                      <p className="text-gray-400">{note.content}</p>
+                      <p className="text-gray-400 whitespace-pre-line">
+                        {note.content}
+                      </p>
 
                       <div className="flex gap-3 mt-3">
                         <button
